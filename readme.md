@@ -1,11 +1,11 @@
 # Miner
 
-Miner is a sophisticated Python-based mining client designed for participating in a distributed computing network. It connects to a mining pool, downloads computational jobs, processes them, and submits the results. This guide provides instructions on how to set up and run Miner.
+Miner is a sophisticated Python-based mining client designed for participating in a distributed computing network. It connects to a mining pool, downloads computational sub-jobs, processes them, and submits the results. This guide provides instructions on how to set up and run Miner.
 
 ## Features
 
 - Connects to a specified mining pool using WebSocket.
-- Downloads and processes computational jobs.
+- Downloads and processes computational sub-jobs.
 - Submits computed gradients back to the mining pool.
 
 ## Prerequisites
