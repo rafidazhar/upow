@@ -4,6 +4,7 @@ import websockets
 import asyncio
 import logging
 import argparse
+import os
 
 
 from training.train_and_contribute import train_and_contribute
@@ -138,6 +139,13 @@ async def ping_server(message_type, find_gradient, download_zip):
         logging.error("An unexpected error occurred: %s", e)
 
 
+def ensure_directory_exists(directory_path):
+    """Ensure that a directory exists; if it doesn't, create it."""
+    if not os.path.exists(directory_path):
+        logging.info(f"creating {directory_path}")
+        os.makedirs(directory_path)
+
+
 async def start_server(find_gradient, download_zip):
     logging.info("Starting Miner...")
     try:
@@ -155,6 +163,9 @@ async def start_server(find_gradient, download_zip):
 
 
 try:
+    ensure_directory_exists("./Destination/")
+    ensure_directory_exists("./job/")
+
     clear_directory("./Destination/")
     clear_directory("./job/")
     args = parse_args()
