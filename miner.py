@@ -47,7 +47,6 @@ async def ping_server(message_type, find_gradient, download_zip):
     try:
         async with websockets.connect(uri) as websocket:
             # Send a ping message
-            print("came here")
             message = {
                 "type": MessageType.PING,
             }
