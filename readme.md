@@ -50,7 +50,8 @@ Before you begin, ensure you have the following installed:
 
    - **Windows Users:**
 
-     Install Visual Studio Code Editor, which includes the necessary C++ build tools. Download it from [https://code.visualstudio.com/](https://code.visualstudio.com/) and ensure to select the C++ workload during installation.
+     Install Visual Studio, which includes the necessary C++ build tools. Download it from [https://visualstudio.microsoft.com/vs/preview/](https://visualstudio.microsoft.com/vs/preview/) and ensure to select the C++ workload during installation.
+     [wikihow Install Clang on Windows](https://www.wikihow.com/Install-Clang-on-Windows)
 
    - **macOS Users:**
 
@@ -61,6 +62,7 @@ Before you begin, ensure you have the following installed:
      ```
 
      For users who prefer not to install Xcode, downloading Command Line Tools for Xcode from [Apple Developer Downloads](https://developer.apple.com/download/more/) is an alternative.
+     [https://ics.uci.edu/~pattis/common/handouts/macclion/clang.html](https://ics.uci.edu/~pattis/common/handouts/macclion/clang.html)
 
 Please ensure these tools are correctly installed and configured on your system before proceeding with the installation of the Python package dependencies.
 
