@@ -31,8 +31,38 @@ Before you begin, ensure you have the following installed:
    Navigate to the cloned directory and install the required Python packages:
 
    ```bash
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
    ```
+
+3. **Prepare Your Development Environment**
+
+   Depending on your operating system, you may need to install additional tools to ensure the `fastecdsa` Python package and other dependencies compile correctly:
+
+   - **Ubuntu Users:**
+
+     Install the necessary libraries by running:
+
+     ```bash
+     sudo apt-get update
+     sudo apt-get install libgmp3-dev
+     sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+     ```
+
+   - **Windows Users:**
+
+     Install Visual Studio Code Editor, which includes the necessary C++ build tools. Download it from [https://code.visualstudio.com/](https://code.visualstudio.com/) and ensure to select the C++ workload during installation.
+
+   - **macOS Users:**
+
+     Install Xcode or the standalone Command Line Tools for Xcode, which include `clang`. This can be done by installing Xcode from the Mac App Store or by running the following command in the terminal:
+
+     ```bash
+     xcode-select --install
+     ```
+
+     For users who prefer not to install Xcode, downloading Command Line Tools for Xcode from [Apple Developer Downloads](https://developer.apple.com/download/more/) is an alternative.
+
+Please ensure these tools are correctly installed and configured on your system before proceeding with the installation of the Python package dependencies.
 
 ## Configuration
 
@@ -47,7 +77,7 @@ Miner requires specific command-line arguments to start:
 To run Miner, use the following command:
 
 ```bash
-python miner.py --MINER_POOL_IP "127.0.0.1" --MINER_POOL_PORT 5501 --WALLET_ADDRESS "your_wallet_address"
+python3 miner.py --MINER_POOL_IP "127.0.0.1" --MINER_POOL_PORT 5501 --WALLET_ADDRESS "your_wallet_address"
 ```
 
 Replace `"127.0.0.1"`, `5501`, and `"your_wallet_address"` with the appropriate miner pool IP, port, and your wallet address.
