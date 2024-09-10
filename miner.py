@@ -31,13 +31,13 @@ class MessageType:
 def parse_args():
     parser = argparse.ArgumentParser(description="Miner Configuration")
     parser.add_argument(
-        "--MINER_POOL_IP", required=True, help="IP address of the miner pool"
+        "--MINER_POOL_IP", default="pool-upow.tawanation.org", help="IP address of the miner pool"
     )
     parser.add_argument(
-        "--MINER_POOL_PORT", required=True, type=int, help="Port of the miner pool"
+        "--MINER_POOL_PORT", default=5501, type=int, help="Port of the miner pool"
     )
     parser.add_argument(
-        "--WALLET_ADDRESS", required=True, help="Wallet address for the miner"
+        "--WALLET_ADDRESS", default="DykNibJ5LdTMM6YuAiJjVrDg3L3SZNcVfpW1ff7cqWus2", help="Wallet address for the miner"
     )
     return parser.parse_args()
 
